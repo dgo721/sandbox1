@@ -22,19 +22,24 @@
 
     <link href="https://static.hsstatic.net/content_shared_assets/static-1.4049/css/public_common.css" rel="stylesheet">
     <link href="//cdn2.hubspot.net/hub/-1/hub_generated/template_assets/1495141902003/hubspot_default/shared/responsive/layout.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2.1.1/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css" />
     <style>
-    .carousel-cell {
-      width: 100%;
-      padding: 0;
-      margin: 0;
+    .swiper-pagination {
+      bottom: 0;
+      width: auto;
+      text-align: left;
     }
 
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+    }
     </style>
   </head>
   <body style="background: gray; margin: 50px;">
-    <div class="banner-area-homepage flick-carousel">
-        <div class="carousel-cell">
+    <div class="banner-area-homepage swiper-container">
+      <div class="swiper-wrapper">
+        <div class="carousel-cell swiper-slide">
           <div class="row-fluid">
               <div class="span8">
                   <div class="home-banner-content">
@@ -68,7 +73,7 @@
               </div>
           </div>
         </div>
-        <div class="carousel-cell">
+        <div class="carousel-cell swiper-slide">
           <div class="row-fluid">
               <div class="span8">
                   <div class="home-banner-content">
@@ -102,7 +107,7 @@
               </div>
           </div>
         </div>
-        <div class="carousel-cell">
+        <div class="carousel-cell swiper-slide">
           <div class="row-fluid">
               <div class="span8">
                   <div class="home-banner-content">
@@ -136,13 +141,21 @@
               </div>
           </div>
         </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
     <script src="https://static.hsstatic.net/jquery-libs/static-1.4/jquery/jquery-1.11.2.js"></script>
-    <script src="https://unpkg.com/flickity@2.1.1/dist/flickity.pkgd.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $('.flick-carousel').flickity({
-          contain: true
+        //initialize swiper when document ready
+        var mySwiper = new Swiper ('.swiper-container', {
+          // Optional parameters
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
         });
       });
     </script>

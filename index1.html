@@ -24,6 +24,45 @@
     <link href="//cdn2.hubspot.net/hub/-1/hub_generated/template_assets/1495141902003/hubspot_default/shared/responsive/layout.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css" />
     <style>
+    body {  background: gray; margin: 50px;  }
+
+    .banner-area-homepage {
+      position: relative;
+    }
+
+    .banner-area-homepage .banner-ontop,
+    .banner-area-homepage .carousel-cell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .banner-ontop {
+      position: absolute;
+      height: 100%;
+      z-index: 2;
+    }
+
+    .banner-ontop .home-banner-content {
+      visibility: hidden;
+    }
+
+    .banner-ontop .home-sidebar-content {
+      background: #FFFFFF;
+    }
+
+    .carousel-cell {
+      min-height: 540px;
+    }
+
+    .carousel-cell .home-banner-content  {
+
+    }
+
+    .carousel-cell .home-sidebar-content {
+      visibility: hidden;
+    }
+
     .swiper-pagination {
       bottom: 0;
       width: auto;
@@ -36,10 +75,77 @@
     }
     </style>
   </head>
-  <body style="background: gray; margin: 50px;">
+  <body>
     <div class="banner-area-homepage swiper-container">
+      <div class="banner-ontop">
+        <div class="row-fluid">
+            <div class="span8">
+                <div class="home-banner-content">
+                    <h1 class="intro-medium">Optimized Artificial Intelligence for AML and KYC</h1>
+                    <h4>Explainable AI for Anti Money Laundering</h4>
+                    <p>Augment instantly your rules based existing Anti-Money Laundering(AML) and Know Your Customer (KYC) platform with SenseMaker’s turn-key Artificial Intelligence application for AML and KYC</p>
+
+                    <ul class="cta-list">
+                        <li>
+                            <a href="/product">See product</a>
+                        </li>
+                        <li>
+                            <a href="/#requestModal">Request a demo</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="span4">
+                <div class="home-sidebar-content">
+                    <h3>Transforming Financial Risk and Compliance with Explainable AI</h3>
+                    <p>Leverage artificial intelligence (AI) and machine learning to more efficiently and accurately identify suspicious actors and activities and reduce risk while lowering costs.</p>
+                    <p>You will learn:</p>
+                    <ul>
+                      <li>Creating intelligent customer risk profiles for more accurate assessment</li>
+                      <li>Improved case intelligence and guided resolution</li>
+                      <li>Benefiting compliance officers, caseworkers and regulators</li>
+                    </ul>
+                    <p><button class="btn btn-download">Download</button></p>
+                </div>
+            </div>
+        </div>
+      </div>
       <div class="swiper-wrapper">
-        <div class="carousel-cell swiper-slide">
+        <div class="carousel-cell swiper-slide" style="background: darkgreen;">
+          <div class="row-fluid">
+              <div class="span8">
+                  <div class="home-banner-content">
+                      <h1 class="intro-medium">Optimized Artificial Intelligence for AML and KYC</h1>
+                      <h4>Explainable AI for Anti Money Laundering</h4>
+                      <p>Augment instantly your rules based existing Anti-Money Laundering(AML) and Know Your Customer (KYC) platform with SenseMaker’s turn-key Artificial Intelligence application for AML and KYC</p>
+
+                      <ul class="cta-list">
+                          <li>
+                              <a href="/product">See product</a>
+                          </li>
+                          <li>
+                              <a href="/#requestModal">Request a demo</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="span4">
+                  <div class="home-sidebar-content">
+                      <h3>Transforming Financial Risk and Compliance with Explainable AI</h3>
+                      <p>Leverage artificial intelligence (AI) and machine learning to more efficiently and accurately identify suspicious actors and activities and reduce risk while lowering costs.</p>
+                      <p>You will learn:</p>
+                      <ul>
+                        <li>Creating intelligent customer risk profiles for more accurate assessment</li>
+                        <li>Improved case intelligence and guided resolution</li>
+                        <li>Benefiting compliance officers, caseworkers and regulators</li>
+                      </ul>
+                      <p><button class="btn btn-download">Download</button></p>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-cell swiper-slide" style="background: darkblue;">
           <div class="row-fluid">
               <div class="span8">
                   <div class="home-banner-content">
@@ -73,41 +179,7 @@
               </div>
           </div>
         </div>
-        <div class="carousel-cell swiper-slide">
-          <div class="row-fluid">
-              <div class="span8">
-                  <div class="home-banner-content">
-                      <h1 class="intro-medium">Optimized Artificial Intelligence for AML and KYC</h1>
-                      <h4>Explainable AI for Anti Money Laundering</h4>
-                      <p>Augment instantly your rules based existing Anti-Money Laundering(AML) and Know Your Customer (KYC) platform with SenseMaker’s turn-key Artificial Intelligence application for AML and KYC</p>
-
-                      <ul class="cta-list">
-                          <li>
-                              <a href="/product">See product</a>
-                          </li>
-                          <li>
-                              <a href="/#requestModal">Request a demo</a>
-                          </li>
-                      </ul>
-
-                  </div>
-              </div>
-              <div class="span4">
-                  <div class="home-sidebar-content">
-                      <h3>Transforming Financial Risk and Compliance with Explainable AI</h3>
-                      <p>Leverage artificial intelligence (AI) and machine learning to more efficiently and accurately identify suspicious actors and activities and reduce risk while lowering costs.</p>
-                      <p>You will learn:</p>
-                      <ul>
-                        <li>Creating intelligent customer risk profiles for more accurate assessment</li>
-                        <li>Improved case intelligence and guided resolution</li>
-                        <li>Benefiting compliance officers, caseworkers and regulators</li>
-                      </ul>
-                      <p><button class="btn btn-download">Download</button></p>
-                  </div>
-              </div>
-          </div>
-        </div>
-        <div class="carousel-cell swiper-slide">
+        <div class="carousel-cell swiper-slide" style="background: darkred;">
           <div class="row-fluid">
               <div class="span8">
                   <div class="home-banner-content">

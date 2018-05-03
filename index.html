@@ -20,14 +20,19 @@
 
     <link rel='shortcut icon' type='image/x-icon' href='img/dgosym_4TO.ico' />
 
+    <link rel="stylesheet" href="/style.css">
+
     <style>
 
     </style>
   </head>
   <body style="background: gray; margin: 50px;">
-    <div class="update">
-      <h1>AJAX Sample</h1>
+    <div id="searcharea">
+        <label for="search">Live search</label>
+        <p>Enter name or info from speaker</p>
+        <input type="search" name="search" id="search" value="" placeholder="Name or info">
     </div>
+    <div id="update"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript">
       
